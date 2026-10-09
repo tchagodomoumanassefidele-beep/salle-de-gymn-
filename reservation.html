@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complexe Sportif Dong-Wè à Kara, Togo. Piscine, tennis, basketball, restaurant et services sportifs.">
+<title>Réservation | Complexe Sportif Dong-Wè</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Complexe Sportif Dong-Wè • Kara, Togo</span><span>06:00 – 22:00 • 7j/7</span></div></div>
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">DONG-WÈ <span>SPORT</span></a>
+    <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="nav-links"><li><a class="" href="index.html">Accueil</a></li><li><a class="" href="equipements.html">Équipements</a></li><li><a class="active" href="reservation.html">Réservation</a></li><li><a class="" href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container"><h1>Réservation</h1><p>Remplissez le formulaire. Votre demande sera préparée et envoyée par WhatsApp au complexe.</p></div></section>
+<section class="section"><div class="container form-wrap">
+<div class="form-card reveal"><h2 style="color:#0b3f7c;margin-bottom:20px">Demande de réservation</h2>
+<form id="reservationForm">
+<div class="form-grid">
+<div class="field"><label for="nom">Nom complet</label><input id="nom" name="nom" required></div>
+<div class="field"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" required></div>
+<div class="field"><label for="activite">Équipement</label><select id="activite" name="activite" required><option value="">Choisir</option><option>Piscine</option><option>Terrain de tennis</option><option>Terrain de basketball</option><option>Restaurant</option></select></div>
+<div class="field"><label for="date">Date</label><input id="date" type="date" name="date" required></div>
+<div class="field"><label for="heure">Heure</label><input id="heure" type="time" name="heure" required></div>
+<div class="field"><label for="personnes">Nombre de personnes</label><input id="personnes" type="number" name="personnes" min="1" value="1" required></div>
+<div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Précisions supplémentaires..."></textarea></div>
+<div class="field full"><button class="btn btn-primary" type="submit">Envoyer la demande sur WhatsApp</button></div>
+</div></form></div>
+<div class="info-card reveal"><h2 style="color:#0b3f7c">Informations</h2><div class="info-list"><div class="info-item"><strong>📞 Téléphone</strong><span>+228 99 24 43 97</span></div><div class="info-item"><strong>🕐 Horaires</strong><span>06:00 – 22:00, tous les jours</span></div><div class="info-item"><strong>📍 Localisation</strong><span>Dong-Wè / Tchaloudè, Kara, Togo</span></div></div></div>
+</div></section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><h3>Complexe Sportif Dong-Wè</h3><p>Un espace moderne dédié au sport, au bien-être, aux loisirs et à la convivialité à Kara.</p></div>
+    <div><h3>Navigation</h3><ul><li><a href="index.html">Accueil</a></li><li><a href="equipements.html">Équipements</a></li><li><a href="reservation.html">Réservation</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li>📞 +228 99 24 43 97</li><li>📍 Kara, Togo</li><li>🕐 06:00 – 22:00</li></ul></div>
+  </div>
+  <div class="container footer-bottom">© <span id="year"></span> Complexe Sportif Dong-Wè. Tous droits réservés.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
